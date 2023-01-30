@@ -1,0 +1,143 @@
+/*----------------------------------------------------------------*/
+/* Hoja de estilos                                                */
+/*----------------------------------------------------------------*/
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+/*----------------------------------------------------------------*/
+/* Definimos el contenedor grid                                   */
+/*----------------------------------------------------------------*/
+.container {
+    display: grid;
+
+    /* defino 4 filas y dos columnas */
+    /* grid-template: 150px 1fr 60px / 30% 70%; */
+    grid-template: 80px 150px 1fr 60px / 30% 70%;
+
+    /* Distribuimos el contenido en cada fila */
+    grid-template-areas: "barra-nav barra-nav" "header header" "izq contenido" "pie pie";
+
+    /* separamos los items con gap */
+    gap: 1px;
+
+    /* Hacemos que el diseño ocupe casi el alto total del navegador */
+}
+
+
+/*----------------------------------------------------------------*/
+/* Defino el nombre de cada area del grid                         */
+/*----------------------------------------------------------------*/
+.barra-nav { grid-area: barra-nav;  }
+.header    { grid-area: header;     }
+.izq       { grid-area: izq;        }
+.contenido { grid-area: contenido;  }
+.pie       { grid-area: pie;        }
+
+
+/*----------------------------------------------------------------*/
+/* Definimos la apariencia de cada item del grid                  */
+/*----------------------------------------------------------------*/
+.item {
+    background-color: darkseagreen;
+    padding: 10px;
+    color: darkgreen;
+    border-radius: 10px;
+}
+
+.header {
+    background-color:#2d3f4e;
+    color: #fefefe;
+    background-image: url(/img/abstract-blue-fractal-wave-technology-background.jpg);
+    background-size: cover;
+    background-position: center left;
+}
+
+.izq {
+    background-color: #fefefe;
+    color: #496070;
+}
+
+.contenido {
+    background-color: #eceded;
+    color: #496070;
+
+}
+
+.pie {
+    background-color: #fefefe;
+    color: #496070;
+    text-align: center;
+        /* display: inline-block;
+        align-items: center; */
+}
+
+/*----------------------------------------------------------------*/
+/* Imagen con bordes redondeados, con limites de tamaño           */
+/*----------------------------------------------------------------*/
+img {
+    display: inline-block;
+    position: relative;
+    margin-top: -60px;
+    border-radius: 65%;
+    width: 100px;
+    height: 100px;
+}
+
+/*----------------------------------------------------------------*/
+/* Definimos tags con textos.                                     */
+/*----------------------------------------------------------------*/
+
+h1 {
+    /* display: inline-block; */
+    /* position: absolute; */
+    padding-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3 {
+    /* display: inline-block; */
+    margin-left: 50px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h5, h6 {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+.titulito {
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#listaHabilidades{
+    margin-left: 35px;
+}
+
+.listaLimpia{
+    list-style: none;
+}
+.experiencia {
+    margin-left: 20px;
+}
+
+.encabezado {
+   display: inline-block;
+}
+
+.encabezado1 {
+    display: block;
+ }
+
