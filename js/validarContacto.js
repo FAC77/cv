@@ -1,9 +1,6 @@
 const nombre = document.getElementById("nombreForm")
 const apellido = document.getElementById("apellidoForm")
 const email = document.getElementById("mailForm")
-// const usuario = document.getElementById("usuario")
-// const clave = document.getElementById("clave")
-// const tel = document.getElementById("tel")
 const motivo = document.getElementById("motivoForm")
 const parrafo = document.getElementById("warningsForm")
 let entrar = true
