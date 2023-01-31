@@ -1,139 +1,218 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/7e4aa89f27.js" crossorigin="anonymous"></script>
-    <script src="js/obtenerPersona.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7e4aa89f27.js" crossorigin="anonymous"></script>
+  <script src="js/obtenerPersona.js"></script>
   </body>
 
-    <title>CV</title>
+  <title>CV</title>
 </head>
+
 <body>
 
-    <div class="container">
-        <nav class="navbar sticky-top navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-             </div>
-            </div>
-          </nav>
-        <header class="item header">
-              <img id="fotoPerfil" src="ada3.jpg" alt="Foto de Perfil" class="img-fluid">
-              <div class="encabezado">
-                <h1 id="nombre" class="encabezado1">Encabezado</h1>
-                <h3 class="encabezado1">Analista de Sistemas</h3>
-              </div>
-        </header>
-
-        <div class="item izq">
-            <div>
-                <h3 class="titulito">Perfil Personal</h3>
-                <p>Analista de sistemas con 15 años de experiencia brindando soluciones informáticas de calidad. Me destaco por mi capacidad para generar sistemas de información y comunicación efectivos que amplifiquen la productividad y mejoren el rendimiento. Deseo unirme a una empresa moderna y consolidada.</p>
-
-                <p>Profesional con una excelente capacidad de organización y amplia experiencia profesional. Me caracterizo por ser una persona muy trabajadora, y por ofrecer una buena atención al cliente, incluyendo la solución de posibles incidencias. En busca de una nueva oportunidad laboral con la que desarrollar mi carrera.</p>
-
-                <p>Soy una persona que se esfuerza en todo momento por garantizar la satisfacción del cliente. Cuento con amplia experiencia en el sector financiero y un sólido conocimiento de las tecnologías predominantes(cobol,db2,etc). Tengo facilidad para trabajar tanto en equipo como de forma independiente, según las necesidades. Busco la oportunidad de demostrar mi valía en una empresa de futuro.</p>
-            </div>
-            <div>
-                <h3 class="titulito">Contacto</h3>
-                <ul class="listaLimpia"  id="contactos">
-                    <li><i class="fa-solid fa-location-dot"></i><span id="domicilio"> Av. Lalala 5100</span></li>
-                    <li><i class="fa-sharp fa-solid fa-envelope"></i><span id="email">mail@mail.com</span> </li>
-                    <li><i class="fa-sharp fa-solid fa-phone"></i><span id="tel"> +54 221 555-9995</span></li>
-                    <li><i class="fa-brands fa-linkedin"></i><span id="ldin"> /fefecoiman</span></li>
-                    <li><i class="fa-brands fa-github"></i><span id="git">  @fefecoiman</span></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="titulito">Educación</h3>
-                <p>Ingeniería en Sistemas de Información en la Universidad Tecnológica Nacional F.R. La Plata. 2022</p>
-                <p>Técnicatura en Electrónica en ENET nª1 La Plata. 1996</p>
-            </div>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#perfil">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contacto</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+    <header class="item header" id="encabezado">
+      <img id="fotoPerfil" src="#" alt="Foto de Perfil" class="img-fluid">
+      <div class="encabezado">
+        <h1 id="nombre" class="encabezado1">Encabezado</h1>
+        <h3 class="encabezado1">Analista de Sistemas</h3>
+      </div>
+    </header>
 
-        <div class="item contenido">
-            <h3 class="titulito">Habilidades</h3>
-            <ul id="listaHabilidades">
-                <li>Modelado de procesos</li>
-                <li>Gestión de proyectos</li>
-                <li>Capacidad de análisis</li>
-                <li>Habilidad para resolver problemas</li>
-                <li>Conocimientos intermedios en Java y PHP</li>
-                <li>Mentalidad analítica</li>
-                <li>Buenas relaciones inter-personales</li>
-                <li>Trabajo multidisciplinario</li>
-                <li>Trabajo en equipo</li>
-                <li>Asistencia técnica</li>
-                <li>Atención al detalle</li>
-                <li>Desarrollo de sistemas</li>
-            </ul>
-            <br>
-            
-            <h3 class="titulito">Experiencia laboral</h3>
-            <ul class="listaLimpia">
-              <li>
-                <h5>KGB SA, Analista Desarrollador</h5>
-                <h6>Set 2017 - Actualidad</h6>
-                <p class="experiencia">Lider del equipo de desarrollo y mantenimiento del Sistema de Creditos del Banco Coop. del Este sobre tecnologías cobol, ksh, unix.</p>
-              </li>
-              <li>
-                <h5>FEFARA, Administrador de convenios con Obras Sociales</h5>
-                <h6>feb 2013 - ago 2017</h6>
-                <p class="experiencia">Gestión de convenios con obras sociales, empresas de medicina pre-paga, mandatarias y colegios profesionales para la provision de medicamentos en farmacias. </p>
-              </li>
-              <li>
-                <h5>Anderssen, Analista Desarrollador</h5>
-                <h6>Set 2005 - ene 2013</h6>
-                <p class="experiencia">Analista lider de del equipo de mantenimiento y desarrollo del sistemas de Valores en Custodia (titulos) del Banco de Galicia y Buenos Aires sobre plataforma cobol, mainframe, VSAM, DB2.</p>
-              </li>
-            </ul>
+    <div class="item izq">
+      <div>
+        <h3 class="titulito" id="perfil">Perfil Personal</h3>
+        <p>Analista de sistemas con 15 años de experiencia brindando soluciones informáticas de calidad. Me destaco por
+          mi capacidad para generar sistemas de información y comunicación efectivos que amplifiquen la productividad y
+          mejoren el rendimiento. Deseo unirme a una empresa moderna y consolidada.</p>
 
-        </div>
+        <p>Profesional con una excelente capacidad de organización y amplia experiencia profesional. Me caracterizo por
+          ser una persona muy trabajadora, y por ofrecer una buena atención al cliente, incluyendo la solución de
+          posibles incidencias. En busca de una nueva oportunidad laboral con la que desarrollar mi carrera.</p>
 
-        <footer class="item pie">
-          <div class="redesFooter">
-            <a href="https://github.com/fac77/cv" target="_blank"><i class="fa-brands fa-github"
-                    id="footer1"></i></a>
-          </div>
-          <div class="copyright-footer">
-            <p>Copyright &copy; 2023</p>
-          </div>
-        </footer>
+        <p>Soy una persona que se esfuerza en todo momento por garantizar la satisfacción del cliente. Cuento con amplia
+          experiencia en el sector financiero y un sólido conocimiento de las tecnologías predominantes(cobol,db2,etc).
+          Tengo facilidad para trabajar tanto en equipo como de forma independiente, según las necesidades. Busco la
+          oportunidad de demostrar mi valía en una empresa de futuro.</p>
+      </div>
+      <div>
+        <h3 class="titulito">Contacto</h3>
+        <ul class="listaLimpia" id="contactos">
+          <li><i class="fa-solid fa-location-dot"></i><span id="domicilio"> Av. Lalala 5100</span></li>
+          <li><i class="fa-sharp fa-solid fa-envelope"></i><span id="email">mail@mail.com</span> </li>
+          <li><i class="fa-sharp fa-solid fa-phone"></i><span id="tel"> +54 221 555-9995</span></li>
+          <li><i class="fa-brands fa-linkedin"></i><span id="ldin"> /fefecoiman</span></li>
+          <li><i class="fa-brands fa-github"></i><span id="git"> @fefecoiman</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="titulito">Educación</h3>
+        <p>Ingeniería en Sistemas de Información en la Universidad Tecnológica Nacional F.R. La Plata. 2022</p>
+        <p>Técnicatura en Electrónica en ENET nª1 La Plata. 1996</p>
+      </div>
+    </div>
+
+    <div class="item contenido">
+      <h3 class="titulito" id="habilidades">Habilidades</h3>
+      <ul id="listaHabilidades">
+        <li>Modelado de procesos</li>
+        <li>Gestión de proyectos</li>
+        <li>Capacidad de análisis</li>
+        <li>Habilidad para resolver problemas</li>
+        <li>Conocimientos avanzados en cobol y JCL</li>
+        <li>Conocimientos intermedios en Java y PHP</li>
+        <li>Mentalidad analítica</li>
+        <li>Buenas relaciones inter-personales</li>
+        <li>Trabajo multidisciplinario</li>
+        <li>Trabajo en equipo</li>
+        <li>Atención al detalle</li>
+      </ul>
+      <br>
+
+      <h3 class="titulito" id="experiencia">Experiencia laboral</h3>
+      <ul class="listaLimpia">
+        <li>
+          <h5>KGB SA, Analista Desarrollador</h5>
+          <h6>Set 2017 - Actualidad</h6>
+          <p class="experiencia">Lider del equipo de desarrollo y mantenimiento del Sistema de Creditos del Banco Coop.
+            del Este sobre tecnologías cobol, ksh, unix.</p>
+        </li>
+        <li>
+          <h5>FEFARA, Administrador de convenios con Obras Sociales</h5>
+          <h6>feb 2013 - ago 2017</h6>
+          <p class="experiencia">Gestión de convenios con obras sociales, empresas de medicina pre-paga, mandatarias y
+            colegios profesionales para la provision de medicamentos en farmacias. </p>
+        </li>
+        <li>
+          <h5>Anderssen, Analista Desarrollador</h5>
+          <h6>Set 2005 - ene 2013</h6>
+          <p class="experiencia">Analista lider de del equipo de mantenimiento y desarrollo del sistemas de Valores en
+            Custodia (titulos) del Banco de Galicia y Buenos Aires sobre plataforma cobol, mainframe, VSAM, DB2.</p>
+        </li>
+      </ul>
 
     </div>
+
+    <footer class="item pie">
+      <div class="redesFooter">
+        <a href="https://github.com/fac77/cv" target="_blank"><i class="fa-brands fa-github" id="footer1"></i></a>
+      </div>
+      <div class="copyright-footer">
+        <p>Copyright &copy; 2023</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Formulario de contacto</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <section id="form">
+            <abbr title="Los nombres solo admiten letras y deben comenzar con mayúsculas">
+              <input class="control" type="text" name="nombre" id="nombreForm" value="" placeholder="Nombre"></abbr>
+
+            <abbr title="Los apellidos solo admiten letras y deben comenzar con mayúsculas">
+              <input class="control" type="text" name="apellido" id="apellidoForm" value=""
+                placeholder="Apellido"></abbr>
+
+            <abbr title="Solo son válidos correos electrónicos">
+              <input class="control" type="text" name="mail" id="mailForm" value="" placeholder="email@algo.com"></abbr>
+
+            <textarea class="control" cols="40" rows="5" type="text" name="motivo" id="motivoForm" value=""
+              placeholder="Motivo de su consulta..."></textarea>
+            <p></p>
+            <div class="wrap">
+              <div class="wrap-texto">
+                <h4>Resultado de validación</h4>
+                <p id="warningsForm"></p>
+              </div>
+            </div>
+          </section>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descartar</button>
+          <input class="buttons" onClick="contacto()" type="submit" name="enviar" id="enviar" value="Enviar">
+          <script src="../js/validarContacto.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2do Modal -->
+  <div class="modal fade" id="salutacionesModal" aria-hidden="true" aria-labelledby="salutaciones" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h1 class="modal-title fs-5" id="salutaciones">Saludos</h1> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¡Muchas Gracias!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Back to top button -->
+<button
+        type="button"
+        class="btn btn-outline-secondary btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+  <i class="fas fa-arrow-up"></i>
+  <script src="js/volverArriba.js"></script>
+</button>
+
 </body>
-</html> 
+
+</html>
